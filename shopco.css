@@ -42,9 +42,28 @@ body {
     background-color: #000000;
     height: 38px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
+    width: 1440px;
+}
+
+.sale__info{
+    gap: 425px;
+    display: flex;
     align-items: center;
 }
+
+#sale__img--X{
+    margin-right: 100px;
+    width: 13.13px;
+    height: 13.13px;
+}
+
+.sale__content{
+    display: flex;
+    justify-content: center;
+}
+
 
 #nav__logo {
     font-family: 'Alfa Slab One', sans-serif;
@@ -154,7 +173,12 @@ body {
 .content {
     height: 663px;
     background-color: #F2F0F1;
-    width: 100%;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.content__page{
     display: flex;
     justify-content: center;
 }
@@ -275,10 +299,16 @@ body {
 }
 
 #brand__box {
+    width: 1440px;
     background-color: #000000;
     height: 122px;
     display: flex;
     gap: 106px;
+    justify-content: center;
+}
+
+.brand__content{
+    display: flex;
     justify-content: center;
 }
 
@@ -676,7 +706,7 @@ body {
 }
 
 .footer {
-    width: 100%;
+    width: 1440px;
     height: 499px;
     background-color: #F0F0F0;
 }
@@ -875,3 +905,5 @@ footer {
     width: 28.56px;
     height: 11.21px;
 }
+
+

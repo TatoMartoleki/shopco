@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP.CO</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="shopco.css">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&display=swap"
         rel="stylesheet">
@@ -17,10 +18,15 @@
 </head>
 
 <body>
-    <div id="sale__box">
-        <span id="sale">
-            Sign up and get 20% off to your first order. <a id="sale__link" href="google.com">Sign Up Now</a>
-        </span>
+    <div class="sale__content">
+        <div id="sale__box">
+            <div class="sale__info">
+                <span id="sale">
+                    Sign up and get 20% off to your first order. <a id="sale__link" href="google.com">Sign Up Now</a>
+                </span>
+                <img id="sale__img--X" src="images/VectorX.png">
+            </div>
+        </div>
     </div>
 
     <nav class="nav">
@@ -58,53 +64,58 @@
         </div>
     </nav>
     <main>
-        <div class="content">
-            <div id="content__box">
-                <h1 id="content__heading">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-                <div id="content__text--box">
-                    <span id="content__text">Browse through our diverse range of meticulously crafted garments, designed
-                        to bring out your
-                        individuality and cater to your sense of style.
-                    </span>
+        <div class="content__page">
+            <div class="content">
+                <div id="content__box">
+                    <h1 id="content__heading">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                    <div id="content__text--box">
+                        <span id="content__text">Browse through our diverse range of meticulously crafted garments,
+                            designed
+                            to bring out your
+                            individuality and cater to your sense of style.
+                        </span>
+                    </div>
+                    <button id="content__button">Shop Now</button>
+                    <div id="quantity__content">
+                        <div class="quantity__box quantity__box--left">
+                            <span class="quantity">200+</span>
+                            <span class="quantity_text">International Brands</span>
+                        </div>
+                        <div class="quantity__box quantity__box--middle">
+                            <span class="quantity">2,000+</span>
+                            <span class="quantity_text">High-Quality Products</span>
+                        </div>
+                        <div class="quantity__box quantity__box--right">
+                            <span class="quantity">30,000+</span>
+                            <span class="quantity_text">Happy Customers</span>
+                        </div>
+                    </div>
                 </div>
-                <button id="content__button">Shop Now</button>
-                <div id="quantity__content">
-                    <div class="quantity__box quantity__box--left">
-                        <span class="quantity">200+</span>
-                        <span class="quantity_text">International Brands</span>
-                    </div>
-                    <div class="quantity__box quantity__box--middle">
-                        <span class="quantity">2,000+</span>
-                        <span class="quantity_text">High-Quality Products</span>
-                    </div>
-                    <div class="quantity__box quantity__box--right">
-                        <span class="quantity">30,000+</span>
-                        <span class="quantity_text">Happy Customers</span>
-                    </div>
+                <div id="content__image--box">
+                    <div id="content__image"></div>
+                    <img id="star" src="./images/star.png">
+                    <img id="smallStar" src="./images/smallStar.png">
                 </div>
-            </div>
-            <div id="content__image--box">
-                <div id="content__image"></div>
-                <img id="star" src="./images/star.png">
-                <img id="smallStar" src="./images/smallStar.png">
             </div>
         </div>
-        <div id="brand__box">
-            <div class="brand__leftNright">
-                <img src="./images/Vectorversace.png" />
-            </div>
-            <div class="brand__middle">
-                <img src="./images/zara-logo-1 1zara.png">
-            </div>
-            <div class="brand__middle">
-                <img src="./images/Vectorgucci.png">
+        <div class="brand__content">
+            <div id="brand__box">
+                <div class="brand__leftNright">
+                    <img src="./images/Vectorversace.png" />
+                </div>
+                <div class="brand__middle">
+                    <img src="./images/zara-logo-1 1zara.png">
+                </div>
+                <div class="brand__middle">
+                    <img src="./images/Vectorgucci.png">
 
-            </div>
-            <div class="brand__middle">
-                <img src="./images/Groupprada.png">
-            </div>
-            <div class="brand__leftNright">
-                <img src="./images/Vectorcalvin.png">
+                </div>
+                <div class="brand__middle">
+                    <img src="./images/Groupprada.png">
+                </div>
+                <div class="brand__leftNright">
+                    <img src="./images/Vectorcalvin.png">
+                </div>
             </div>
         </div>
         <div id="product__page">
