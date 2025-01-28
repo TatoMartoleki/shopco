@@ -1,0 +1,877 @@
+@font-face {
+    font-family: 'Integral CF';
+    src: url('./Integral-CF-Font-Family/Fontspring-DEMO-integralcf-regular.otf') format('woff2'),
+        url('./Integral-CF-Font-Family/Fontspring-DEMO-integralcf-regularoblique.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Integral CF;
+    src: url("./Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf") format("woff2"),
+        url("./Integral-CF-Font-Family/Fontspring-DEMO-integralcf-boldoblique.otf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Integral CF', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Satoshi", sans-serif;
+}
+
+#sale {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.9px;
+}
+
+#sale__link {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.9px;
+}
+
+#sale__box {
+    background-color: #000000;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav__logo {
+    font-family: 'Alfa Slab One', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43.81px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.nav__box {
+    max-width: 1240px;
+    width: 100%;
+    display: flex;
+    height: 96px;
+    align-items: center;
+    gap: 40px
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 24px;
+
+}
+
+.nav__list--item {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+
+}
+
+#nav__shop--image {
+    display: flex;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+#nav__image {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+}
+
+#nav__image--box {
+    display: flex;
+    width: 62px;
+    height: 24px;
+    gap: 14px;
+}
+
+
+#nav__search {
+    width: 100%;
+    max-width: 586px;
+    height: 48px;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    border-radius: 62px;
+    display: flex;
+}
+
+#nav__search--button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+#nav__search--input {
+    border: none;
+    background-color: #F0F0F0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    width: 100%;
+}
+
+#nav__search--input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#nav__search--input:focus {
+    border: none;
+    outline: none
+}
+
+#nav__search--content {
+    display: flex;
+    gap: 12px;
+    padding-left: 16px;
+    width: 93%;
+}
+
+.content {
+    height: 663px;
+    background-color: #F2F0F1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#content__box {
+    max-width: 612px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content__heading {
+    font-size: 64px;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-weight: 400;
+    line-height: 64px;
+    margin-bottom: 30px;
+}
+
+#content__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+#content__text--box {
+    max-width: 545px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+#content__button {
+    background-color: #000000;
+    width: 210px;
+    height: 52px;
+    border-radius: 62px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+    margin-bottom: 48px;
+    cursor: pointer;
+}
+
+
+#content__image--box {
+    position: relative;
+    width: 100%;
+    max-width: 627px;
+    overflow: hidden;
+}
+
+#star,
+#smallStar {
+    position: relative;
+    z-index: 10;
+}
+
+#star {
+    top: 18%;
+    left: 80%;
+    width: 104px;
+}
+
+#smallStar {
+    top: 37%;
+    left: -12%;
+    width: 56px;
+}
+
+
+#content__image {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/ccfd8aa5825862cdb9604a4fb4930464.jpeg');
+    background-size: 628px 970px;
+    position: absolute;
+
+}
+
+.quantity__box {
+    height: 74px;
+
+}
+
+#quantity__content {
+    display: flex;
+    width: 100%;
+}
+
+.quantity__box--middle {
+    border-left: #0000001A 1px solid;
+    border-right: #0000001A 1px solid;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.quantity {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: left;
+    color: #000000;
+}
+
+.quantity_text {
+    width: 100%;
+}
+
+.quantity__box--left {
+    margin-right: 32px;
+}
+
+.quantity__box--right {
+    margin-left: 32px;
+}
+
+#brand__box {
+    background-color: #000000;
+    height: 122px;
+    display: flex;
+    gap: 106px;
+    justify-content: center;
+}
+
+.brand__leftNright {
+    margin-top: 2.5px;
+}
+
+.brand__middle {
+    display: flex;
+    align-items: center;
+}
+
+#product__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+
+.products__list {
+    width: 1241px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.product__container {
+    width: 295px;
+    height: 443px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product__image {
+    width: 125px;
+}
+
+.image__box {
+    display: flex;
+    width: 100%;
+    height: 298px;
+    background-color: #F0EEED;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.product__content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    gap: 68px
+}
+
+.product__rating {
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+}
+
+#product__heading {
+    font-family: "Alfa Slab One", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 65.71px;
+
+}
+
+.product__title {
+    font-family: "Satoshi", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.product__price {
+    font-family: "Satoshi", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+}
+
+.rating__quantity {
+    display: flex;
+}
+
+.rating__imgNpoints {
+    display: flex;
+    gap: 13px;
+}
+
+.rating__numbers {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    color: #000000;
+
+}
+
+.rating__outOf {
+    color: #00000099;
+}
+
+.sale__content {
+    gap: 10px;
+    display: flex;
+}
+
+.sale__box {
+    border-radius: 62px;
+    padding: 6px 14px;
+    background-color: #FF33331A;
+    color: #FF3333;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product__price--box {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-decoration-line: line-through;
+    color: #00000066;
+}
+
+#browse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#browse__box {
+    width: 1239px;
+    height: 866px;
+    border-radius: 40px;
+    background-color: #F0F0F0;
+
+}
+
+#browse__heading {
+    font-family: 'Integral CF', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+}
+
+#casual {
+    width: 407px;
+    height: 289px;
+    cursor: pointer;
+}
+
+#formal {
+    width: 684px;
+    height: 289px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.browse__row {
+    display: flex;
+    gap: 20px
+}
+
+#browse__content {
+    margin: 70px 64px 76px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+#party {
+    width: 684px;
+    height: 289px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+#gym {
+    width: 407px;
+    height: 289px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.browse__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.customer__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 129px;
+}
+
+
+
+#customer__heading {
+    font-family: "Integral CF", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+    color: #000000;
+}
+
+.customer__heading--box {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.customer__content {
+    max-width: 1240px;
+    width: 100%;
+    margin-top: 112px;
+    display: flex;
+    flex-direction: column;
+    gap: 47.12px;
+}
+
+.customer__arrows {
+    display: flex;
+    justify-content: end;
+    gap: 18.63px
+}
+
+.customer__arrow--item{
+    cursor: pointer;
+}
+
+
+.review__box {
+    width: 400px;
+    height: 240px;
+    border-radius: 20px;
+    border: #0000001A 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review__content {
+    display: flex;
+    gap: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.review__card {
+    width: 336px;
+    height: 161.58px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review__box--name {
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+.review__nameNverify {
+    width: 111px;
+    height: 24px;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.review__box--paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #00000099;
+}
+
+.review__nameNparagraph {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.latest__box {
+    width: 1240px;
+    height: 180px;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 212px
+}
+
+.latest {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 90px
+}
+
+#latest__heading {
+    font-family: "Integral CF";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    color: #FFFFFF;
+    width: 551px;
+}
+
+.latest__functionality--box {
+    width: 349px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+.latest__email--input {
+    width: 100%;
+    height: 48px;
+    border-radius: 62px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.latest__inputs {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-left: 16px;
+}
+
+#latest__email--icon {
+    width: 20.25px;
+    height: 15.75px;
+}
+
+.latest__email {
+    width: 280px;
+    border: none;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+
+}
+
+.latest__email:focus {
+    border: none;
+    outline: none;
+}
+
+.latest__button {
+    width: 100%;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 62px;
+    cursor: pointer;
+    border: none;
+}
+
+.footer {
+    width: 100%;
+    height: 499px;
+    background-color: #F0F0F0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer__heading {
+    font-family: "Integral CF";
+    font-size: 33.45px;
+    font-weight: 700;
+    line-height: 40.15px;
+    text-align: left;
+
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer__box--first {
+    width: 248px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #00000099;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.social__icon {
+    width: 28px;
+    height: 28px;
+    border: #00000033 solid 1px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #000000;
+}
+
+.twitter__logo {
+    width: 11.17px;
+    height: 9.03px;
+}
+
+.facebook__logo {
+    width: 6.32px;
+    height: 12.17px;
+}
+
+.instagram__logo {
+    width: 13.55px;
+    height: 13.55px;
+}
+
+.github__logo {
+    width: 12.96px;
+    height: 12.65px;
+}
+
+.footer__social--box {
+    display: flex;
+    flex-direction: column;
+    gap: 44.94px;
+}
+
+.footer__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer__list--heading {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: #00000099;
+    gap: 26px;
+}
+
+.footer__list--item {
+    cursor: pointer;
+}
+
+.footer__list--box {
+    display: flex;
+    flex-direction: column;
+    gap: 26px
+}
+
+.footer__payment {
+    width: 1240px;
+    border-top: #0000001A 1px solid;
+}
+
+.footer__payment--paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: right;
+    color: #00000099;
+}
+
+.footer__payment--content {
+    margin-top: 20px;
+    height: 30.03;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment__method {
+    display: flex;
+    gap: 12px;
+}
+
+.payment__box {
+    width: 46.61px;
+    height: 30.03px;
+    border-radius: 5.38px;
+    border: #D6DCE5 0.22 solid;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.visa__logo {
+    width: 32.54px;
+    height: 10.51px;
+    display: flex;
+}
+
+.master__logo {
+    width: 25.38px;
+    height: 15.69px;
+}
+
+.paypal__logo {
+    width: 34.55px;
+    height: 9.21px;
+}
+
+.applepay__logo {
+    width: 26.41px;
+    height: 11.21px;
+}
+
+.googlepay__logo {
+    width: 28.56px;
+    height: 11.21px;
+}
