@@ -47,19 +47,19 @@ body {
     width: 1440px;
 }
 
-.sale__info{
+.sale__info {
     gap: 425px;
     display: flex;
     align-items: center;
 }
 
-#sale__img--X{
+#sale__img--X {
     margin-right: 100px;
     width: 13.13px;
     height: 13.13px;
 }
 
-.sale__content{
+.sale__content {
     display: flex;
     justify-content: center;
 }
@@ -126,14 +126,14 @@ body {
 
 
 #nav__search {
-    width: 100%;
-    max-width: 586px;
+    position: relative;
     height: 48px;
     background-color: #F0F0F0;
     display: flex;
     align-items: center;
     border-radius: 62px;
     display: flex;
+    justify-content: center;
 }
 
 #nav__search--button {
@@ -170,15 +170,74 @@ body {
     width: 93%;
 }
 
+.search__image {
+    width: 50px;
+    height: 50px;
+}
+
+.search__product {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #F2F0F1 1px solid;
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.search__title--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#search__product--price {
+    font-weight: 700;
+}
+
+.search__bar {
+    z-index: 1000;
+    position: absolute;
+    top: 72px;
+    width: 100%
+}
+
+.nav__search--box {
+    position: relative;
+    max-width: 586px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search__product span {
+    color: #FFFFFF;
+}
+
+
+#search__results {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #000000;
+    border: 1px solid #F2F0F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
 .content {
     height: 663px;
     background-color: #F2F0F1;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.content__page{
+.content__page {
     display: flex;
     justify-content: center;
 }
@@ -299,7 +358,8 @@ body {
 }
 
 #brand__box {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     background-color: #000000;
     height: 122px;
     display: flex;
@@ -307,7 +367,7 @@ body {
     justify-content: center;
 }
 
-.brand__content{
+.brand__content {
     display: flex;
     justify-content: center;
 }
@@ -559,7 +619,7 @@ body {
     gap: 18.63px
 }
 
-.customer__arrow--item{
+.customer__arrow--item {
     cursor: pointer;
 }
 
@@ -906,4 +966,248 @@ footer {
     height: 11.21px;
 }
 
+#burger__menu--icon {
+    display: none;
+}
 
+.brand__wrapper {
+    display: flex;
+    gap: 106px;
+    justify-content: center;
+}
+
+@media (max-width: 390px) {
+    #sale__box {
+        width: 390px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sale__content {
+        display: flex;
+        justify-self: center
+    }
+
+    #sale {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.2px;
+    }
+
+    #sale__link {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16.2px;
+        text-align: left;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+
+    #sale__img--X {
+        display: none;
+    }
+
+    .nav__box {
+        display: flex;
+        width: 336px;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        width: 390px;
+        height: 64px;
+        align-items: center;
+    }
+
+    #nav__logo {
+        font-size: 25.2px;
+        font-weight: 700;
+        line-height: 30.24px;
+        text-align: left;
+
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__search--box {
+        display: none;
+    }
+
+    #nav__image--box {
+        display: none;
+    }
+
+    #burger__menu--icon {
+        display: unset;
+    }
+
+    .content__page {
+        width: 390px;
+    }
+
+    .content {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 853px;
+        justify-content: unset;
+    }
+
+    #content__box {
+        display: flex;
+        flex-direction: column;
+        width: 358px;
+        margin-top: 40px;
+
+    }
+
+    #content__heading {
+        font-family: "Integral CF" sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 34px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    #quantity__content {
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .quantity__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quantity {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32.4px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+
+    .quantity_text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #00000099;
+    }
+
+
+    .quantity__box--middle {
+        width: 117px;
+        border-right: none;
+        padding-right: 0px;
+    }
+
+    .quantity__box--right {
+        margin-left: 0px;
+    }
+
+    #content__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #00000099;
+    }
+
+    #content__button {
+        width: 358px;
+    }
+
+    #content__image--box {
+        height: 448px;
+        width: 390px;
+
+    }
+
+    #content__image {
+        width: 390px;
+        height: 448px;
+        background-size: 400px 500px;
+        background-repeat: no-repeat;
+    }
+
+    #star {
+        left: 290px;
+        width: 76px;
+        height: 76px;
+        top: 35px
+    }
+
+    #smallStar {
+        width: 44px;
+        height: 44px;
+        top: 85px;
+    }
+
+    .brand__content {
+        width: 390px;
+        height: 146px;
+    }
+
+    #brand__box {
+        display: flex;
+        height: 146px;
+        align-items: center;
+    }
+
+    .brand__wrapper {
+        width: 357.94px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 34px;
+        height: 100px;
+    }
+
+    .versace {
+        width: 116.74px;
+        height: 23.25px;
+    }
+
+    .zara {
+        width: 63.81px;
+        height: 26.65px;
+    }
+
+    .gucci {
+        width: 109.39px;
+        height: 25.24px;
+    }
+
+    .prada {
+        width: 127px;
+        height: 21px;
+    }
+
+    .calvin {
+        width: 134.84px;
+        height: 21.75px;
+
+    }
+}

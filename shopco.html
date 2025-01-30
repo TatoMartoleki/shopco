@@ -51,16 +51,24 @@
                     Brands
                 </span>
             </div>
-            <div id="nav__search">
-                <div id="nav__search--content">
-                    <button id="nav__search--button" type="submit"> <img src="./images/search.png"></button>
-                    <input type="search" id="nav__search--input" placeholder="Search for products...">
+            <div class="nav__search--box">
+
+                <div id="nav__search">
+                    <div id="nav__search--content">
+                        <button id="nav__search--button" type="submit"> <img src="./images/search.png"></button>
+                        <input type="text" id="nav__search--input" placeholder="Search products..." />
+                    </div>
+                </div>
+                <div class="search__bar">
+                    <div id="search__results" class="search__products"></div>
                 </div>
             </div>
             <div id="nav__image--box">
                 <img id="nav__image" src="./images/cart.png">
                 <img id="nav__image" src="./images/profile.png">
             </div>
+            <img id="burger__menu--icon" src="images/FrameburgerMenu.png">
+
         </div>
     </nav>
     <main>
@@ -100,29 +108,29 @@
         </div>
         <div class="brand__content">
             <div id="brand__box">
-                <div class="brand__leftNright">
-                    <img src="./images/Vectorversace.png" />
-                </div>
-                <div class="brand__middle">
-                    <img src="./images/zara-logo-1 1zara.png">
-                </div>
-                <div class="brand__middle">
-                    <img src="./images/Vectorgucci.png">
+                <div class="brand__wrapper">
+                    <div class="brand__leftNright">
+                        <img class="versace" src="./images/Vectorversace.png" />
+                    </div>
+                    <div class="brand__middle">
+                        <img class="zara" src="./images/zara-logo-1 1zara.png">
+                    </div>
+                    <div class="brand__middle">
+                        <img class="gucci" src="./images/Vectorgucci.png">
 
-                </div>
-                <div class="brand__middle">
-                    <img src="./images/Groupprada.png">
-                </div>
-                <div class="brand__leftNright">
-                    <img src="./images/Vectorcalvin.png">
+                    </div>
+                    <div class="brand__middle">
+                        <img class="prada" src="./images/Groupprada.png">
+                    </div>
+                    <div class="brand__leftNright">
+                        <img class="calvin" src="./images/Vectorcalvin.png">
+                    </div>
                 </div>
             </div>
         </div>
         <div id="product__page">
             <h2 id="product__heading">NEW ARRIVALS</h2>
             <div id="products">
-                <div class="products__list"></div>
-                <div class="products__list"></div>
                 <div class="products__list"></div>
                 <div class="products__list"></div>
             </div>

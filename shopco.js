@@ -1,48 +1,60 @@
-const apiEndpoint = "https://fakestoreapi.com/products";
+const apiEndpoint = "https://fakestoreapi.com/products?limit=8";
 const productsList = document.getElementsByClassName('products__list')
+
+
 
 
 fetch(apiEndpoint)
     .then(Response => Response.json())
     .then(data => {
+
+        const dummyDatabase = [...data]
+
+        const firstFour = data.slice(0, 4)
+        const secondFout = data.slice(4, 8)
+
+        console.log(firstFour);
+
+
+
         const firstTwo = data.slice(0, 2);
         const secondTwo = data.slice(2, 4);
         const thirdTwo = data.slice(4, 6)
         const fourthTwo = data.slice(6, 8)
 
-        firstTwo[0].rating.rate = 4.5
-        firstTwo[0].title = "Fjallraven - Foldsack Backpack"
-        firstTwo[0].rating.img = "./images/Frame 104.5.png"
-        firstTwo[1].rating.rate = 3.5
-        firstTwo[1].title = "Mens Casual Premium T-Shirts"
-        firstTwo[1].rating.img = "./images/Frame 103.5.png"
+        firstFour[0].rating.rate = 4.5
+        firstFour[0].title = "Fjallraven - Foldsack Backpack"
+        firstFour[0].rating.img = "./images/Frame 104.5.png"
+        firstFour[1].rating.rate = 3.5
+        firstFour[1].title = "Mens Casual Premium T-Shirts"
+        firstFour[1].rating.img = "./images/Frame 103.5.png"
         // firstTwo[1].price = 240
-        firstTwo[1].rating.sale = 20
+        firstFour[1].rating.sale = 20
 
-        secondTwo[0].rating.rate = 4.5
-        secondTwo[0].rating.img = "./images/Frame 104.5.png"
-        secondTwo[1].rating.rate = 3.5
-        secondTwo[1].rating.img = "./images/Frame 103.5.png"
+        firstFour[2].rating.rate = 4.5
+        firstFour[2].rating.img = "./images/Frame 104.5.png"
+        firstFour[3].rating.rate = 3.5
+        firstFour[3].rating.img = "./images/Frame 103.5.png"
         // secondTwo[1].price = 240
-        secondTwo[1].rating.sale = 20
+        firstFour[3].rating.sale = 20
 
 
-        thirdTwo[0].rating.rate = 4.5
-        thirdTwo[0].rating.img = "./images/Frame 104.5.png"
-        thirdTwo[0].title = "Dragon Station Chain Bracelet"
-        thirdTwo[1].rating.rate = 3.5
-        thirdTwo[1].rating.img = "./images/Frame 103.5.png"
+        secondFout[0].rating.rate = 4.5
+        secondFout[0].rating.img = "./images/Frame 104.5.png"
+        secondFout[0].title = "Dragon Station Chain Bracelet"
+        secondFout[1].rating.rate = 3.5
+        secondFout[1].rating.img = "./images/Frame 103.5.png"
         // thirdTwo[1].price = 135
-        thirdTwo[1].rating.sale = 30
+        secondFout[1].rating.sale = 30
 
 
-        fourthTwo[0].rating.rate = 4.5
-        fourthTwo[0].rating.img = "./images/Frame 104.5.png"
-        fourthTwo[1].rating.rate = 3.5
-        fourthTwo[1].rating.img = "./images/Frame 103.5.png"
-        fourthTwo[1].title = "Pierced Owl Rose Gold Plated"
+        secondFout[2].rating.rate = 4.5
+        secondFout[2].rating.img = "./images/Frame 104.5.png"
+        secondFout[3].rating.rate = 3.5
+        secondFout[3].rating.img = "./images/Frame 103.5.png"
+        secondFout[3].title = "Pierced Owl Rose Gold Plated"
         // fourthTwo[1].price = 135
-        fourthTwo[1].rating.sale = 30
+        secondFout[3].rating.sale = 30
 
 
 
@@ -66,8 +78,8 @@ fetch(apiEndpoint)
                     </div>
                     <div class="sale__content">
                         <p class="product__price">$${product.rating.sale ? (product.price * (1 - product.rating.sale / 100)).toFixed(2) : product.price}</p>
-                        ${product.rating.sale ? 
-                            `<div class="product__price--box">
+                        ${product.rating.sale ?
+                    `<div class="product__price--box">
                                 $${product.price}
                             </div>` : ''}
                         ${product.rating.sale ? `<div class="sale__box">-${product.rating.sale}%</div>` : ''}
@@ -75,26 +87,78 @@ fetch(apiEndpoint)
             return productContainer;
         };
 
-        firstTwo.forEach(product => {
+        firstFour.forEach(product => {
             const productElement = createProductElement(product);
             productsList[0].appendChild(productElement);
         });
 
-        secondTwo.forEach(product => {
+        secondFout.forEach(product => {
             const productElement = createProductElement(product);
             productsList[1].appendChild(productElement);
         });
-
-        thirdTwo.forEach(product => {
-            const productElement = createProductElement(product);
-            productsList[0].appendChild(productElement);
-        });
-
-        fourthTwo.forEach(product => {
-            const productElement = createProductElement(product);
-            productsList[1].appendChild(productElement);
-        });
-
 
 
     }).catch(error => console.error('Error fetching data:', error));
+
+let allProducts = [];
+
+window.onload = function () {
+    fetch('https://fakestoreapi.com/products')
+        .then(response => response.json())
+        .then(data => {
+            allProducts = data;
+        })
+        .catch(error => {
+            console.error("Error fetching all products:", error);
+        });
+};
+
+function searchProducts(query) {
+    const filteredProducts = allProducts.filter(product =>
+        product.title.toLowerCase().includes(query) ||
+        product.category.toLowerCase().includes(query)
+    );
+
+    const resultsContainer = document.getElementById('search__results');
+    resultsContainer.innerHTML = '';
+
+    if (filteredProducts.length === 0) {
+        resultsContainer.innerHTML = 'No products found.';
+        return;
+    }
+
+    filteredProducts.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.classList.add('search__product');
+        productDiv.innerHTML = `
+                <div class="search__image--wrapper">
+                    <img class="search__image" src="${product.image}" alt="${product.title}" />
+                </div>
+                <div class="search__title--wrapper">
+                    <span>${product.title}</span>
+                    <span id="search__product--price">$${product.price}</span>
+                </div>
+            `;
+        resultsContainer.appendChild(productDiv);
+    });
+}
+
+document.getElementById('nav__search--button').addEventListener('click', function (event) {
+    event.preventDefault();
+    const query = document.getElementById('nav__search--input').value.toLowerCase();
+
+    if (!query.trim()) {
+        alert("Please enter a search query.");
+        return;
+    }
+
+    searchProducts(query);
+});
+
+document.getElementById('nav__search--input').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        const query = document.getElementById('nav__search--input').value.toLowerCase();
+        searchProducts(query);
+    }
+});
