@@ -131,8 +131,18 @@
         <div id="product__page">
             <h2 id="product__heading">NEW ARRIVALS</h2>
             <div id="products">
-                <div class="products__list"></div>
-                <div class="products__list"></div>
+                <div class="products__list list__frist--row"></div>
+                <div class="product__button--wrapper">
+                    <button class="product__page--button product__first--button">View All</button>
+                </div>
+                <div class="product__border--wrapper">
+                    <div class="product__page--border"></div>
+                </div>
+                <span class="product__heading--second">top selling</span>
+                <div class="products__list list__second--row"></div>
+                <div class="product__button--wrapper">
+                    <button class="product__page--button">View All</button>
+                </div>
             </div>
         </div>
         </div>
@@ -172,6 +182,10 @@
                     <h4 id="customer__heading">
                         OUR HAPPY CUSTOMERS
                     </h4>
+                    <div class="customer__arrows--mobile">
+                        <img class="customer__arrow--item" src="./images/arrow-down-bold 2leftArrow.png">
+                        <img class="customer__arrow--item" src="./images/arrow-down-bold 1rightArrow.png">
+                    </div>
                 </div>
                 <div class="customer__box">
                     <div class="reviews">
@@ -182,13 +196,13 @@
                         <div class="review__content">
                             <div class="review__box">
                                 <div class="review__card">
-                                    <div>
-                                        <img src="./images/Frame 10stars.png">
+                                    <div class="review__star--box">
+                                        <img class="review__star--box" src="./images/Frame 10stars.png">
                                     </div>
                                     <div class="review__nameNparagraph">
                                         <div class="review__nameNverify">
                                             <span class="review__box--name">Sarah M.</span>
-                                            <img src="./images/Frameplus.png">
+                                            <img class="review__plus" src="./images/Frameplus.png">
                                         </div>
 
                                         <p class="review__box--paragraph">
@@ -202,13 +216,13 @@
                             </div>
                             <div class="review__box">
                                 <div class="review__card">
-                                    <div>
-                                        <img src="./images/Frame 10stars.png">
+                                    <div class="review__star--box">
+                                        <img class="review__star--box" src="./images/Frame 10stars.png">
                                     </div>
                                     <div class="review__nameNparagraph">
                                         <div class="review__nameNverify">
                                             <span class="review__box--name">Alex K.</span>
-                                            <img src="./images/Frameplus.png">
+                                            <img class="review__plus" src="./images/Frameplus.png">
                                         </div>
 
                                         <p class="review__box--paragraph">
@@ -221,13 +235,13 @@
                             </div>
                             <div class="review__box">
                                 <div class="review__card">
-                                    <div>
-                                        <img src="./images/Frame 10stars.png">
+                                    <div class="review__star--box">
+                                        <img class="review__star--box" src="./images/Frame 10stars.png">
                                     </div>
                                     <div class="review__nameNparagraph">
                                         <div class="review__nameNverify">
                                             <span class="review__box--name">James L.</span>
-                                            <img src="./images/Frameplus.png">
+                                            <img class="review__plus" src="./images/Frameplus.png">
                                         </div>
 
                                         <p class="review__box--paragraph">
@@ -249,7 +263,7 @@
 
             <div class="latest">
                 <div class="latest__box">
-                    <div>
+                    <div class="latest__box--head">
                         <h5 id="latest__heading">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h5>
                     </div>
                     <div class="latest__functionality--box">
@@ -299,48 +313,50 @@
 
                             </div>
                         </div>
-                        <div class="footer__list--box">
-                            <span class="footer__list--heading">Company</span>
-                            <div>
-                                <ul class="footer__list">
-                                    <li class="footer__list--item">About</li>
-                                    <li class="footer__list--item">Features</li>
-                                    <li class="footer__list--item">Works</li>
-                                    <li class="footer__list--item">Career</li>
-                                </ul>
+                        <div class="footer__list--wrapper">
+                            <div class="footer__list--box first__list--box">
+                                <span class="footer__list--heading">Company</span>
+                                <div>
+                                    <ul class="footer__list">
+                                        <li class="footer__list--item">About</li>
+                                        <li class="footer__list--item">Features</li>
+                                        <li class="footer__list--item">Works</li>
+                                        <li class="footer__list--item">Career</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="footer__list--box">
-                            <span class="footer__list--heading">Help</span>
-                            <div>
-                                <ul class="footer__list">
-                                    <li class="footer__list--item">Customer Support</li>
-                                    <li class="footer__list--item">Delivery Details</li>
-                                    <li class="footer__list--item">Terms & Conditions</li>
-                                    <li class="footer__list--item">Privacy Policy</li>
-                                </ul>
+                            <div class="footer__list--box">
+                                <span class="footer__list--heading">Help</span>
+                                <div>
+                                    <ul class="footer__list">
+                                        <li class="footer__list--item">Customer Support</li>
+                                        <li class="footer__list--item">Delivery Details</li>
+                                        <li class="footer__list--item">Terms & Conditions</li>
+                                        <li class="footer__list--item">Privacy Policy</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="footer__list--box">
-                            <span class="footer__list--heading">FAQ</span>
-                            <div>
-                                <ul class="footer__list">
-                                    <li class="footer__list--item">Account</li>
-                                    <li class="footer__list--item">Manage Deliveries</li>
-                                    <li class="footer__list--item">Orders</li>
-                                    <li class="footer__list--item">Payments</li>
-                                </ul>
+                            <div class="footer__list--box third__list--box">
+                                <span class="footer__list--heading">FAQ</span>
+                                <div>
+                                    <ul class="footer__list">
+                                        <li class="footer__list--item">Account</li>
+                                        <li class="footer__list--item">Manage Deliveries</li>
+                                        <li class="footer__list--item">Orders</li>
+                                        <li class="footer__list--item">Payments</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="footer__list--box">
-                            <span class="footer__list--heading">Resources</span>
-                            <div>
-                                <ul class="footer__list">
-                                    <li class="footer__list--item">Free eBooks</li>
-                                    <li class="footer__list--item">Development Tutorial</li>
-                                    <li class="footer__list--item">How to - Blog</li>
-                                    <li class="footer__list--item">Youtube Playlist</li>
-                                </ul>
+                            <div class="footer__list--box">
+                                <span class="footer__list--heading">Resources</span>
+                                <div>
+                                    <ul class="footer__list">
+                                        <li class="footer__list--item">Free eBooks</li>
+                                        <li class="footer__list--item">Development Tutorial</li>
+                                        <li class="footer__list--item">How to - Blog</li>
+                                        <li class="footer__list--item">Youtube Playlist</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
